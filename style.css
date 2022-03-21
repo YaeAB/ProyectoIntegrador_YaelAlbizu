@@ -1,0 +1,212 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*TENGO 4 SECCIONES + FOOTER (HERO,SUB-SECTION1,SUB-SECTION2,SUB-SECTION3)*/
+section {
+    /*height: 500px;*/
+    background-color: whitesmoke;
+    border: solid black 2px;
+    /*border-radius: 30px;*/
+
+}
+/* hero es una clase por eso va con .*/
+.hero{
+    
+    background-image: url(images/4-min.jpg);
+    background-repeat: no-repeat;/*para que no se repita*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;/*si muevo la pantalla se mantiene em forma*/
+    /*background-color: #1c1d25; ESTE LO USO SI SOLO QUIERO COLOR DE FONDO*/
+    height: 100vh;
+    /*dentro de hero estan los links, le doy estilo a la letra*/
+    color: white;
+    font-size: 40px;
+}
+footer{
+    height: 500px;
+    background-color: blue;
+}
+/*el flex hace que todo sea flexible en la pantalla que sea*/
+nav{
+    display: flex;
+    justify-content: space-around/*space-between;esto hace que se vaya al margen*/
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    /*font-size: 30px;*/
+}
+li{
+    /*width: 200px; lo comento porque lo hago directo en ul*/
+    text-decoration: none;/*que no tenga los puntos*/
+    
+}
+h1{
+  font-size: 50px ;
+  margin: 0; 
+
+}
+h2{
+    font-size: 50px;
+    text-align: left;
+    margin:0;
+        
+}
+
+p{
+    margin: 0;
+}
+
+.info-text{
+    margin-left: 70px;
+    margin-bottom: 200px;
+  
+}
+.info-text-area{
+    display: flex;
+    /*flex-direction: column;*/
+    height: 100%;
+    justify-content: space-between/*center*/;
+    align-items: center;
+
+}
+/*ESTILO DEL BOTON*/
+.button{
+    width: 100px;/*150px;*/
+    height: 25px;/*50px;*/
+    border-radius: 30px;/*para redondear los bordes del boton*/
+    background-color: white;
+    text-align: center ;
+    
+    font-weight: 200;
+    font-size: 20px;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top:60px; /*20px;*/
+    
+}
+/*el button hover es para q cambie de color cuando
+paso el mouse por arriba del boton*/
+.button:hover{
+    background-color: #4b98ef;
+}
+/*el button active es para que cambie de color cuando
+lo clickeo*/
+.button:active{
+    background-color: rgb(63, 174, 226);
+    color:#808080
+}
+
+/*.socials{
+    padding-bottom: 200px;
+    /*para que quede mas alineado al centro
+    
+}*/
+.social{
+    margin: 0;
+}
+/*LOGO #YOPROGRAMO*/
+.logo{
+    height: 150px;
+    border-radius: 30px;
+    padding-top: 20px;
+    
+}
+/*INFO PERSONAL*/
+.sub-section1{
+     
+   background-color: whitesmoke;
+   display: flex;
+   justify-content: space-around; 
+   padding: 60px;
+   text-align:left;
+   
+}
+.about_me{
+    
+}
+/*EXPERIENCIA LABORAL*/
+.sub-section2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 60px; 
+
+}
+.lista-empleos{
+    list-style-type: none;
+    width: 500px;
+    text-align: left;
+    font-size: 30px;
+    
+}
+.foto{
+    width: 200px;
+    border-radius: 150px;
+    
+}
+.foto-container{
+    display: flex;
+    align-items: center;
+
+}
+/*MIS PROYECTOS*/
+.project-card{
+    width: 700px;
+    height: 200px;
+    box-shadow: 1px 1px 10px;
+    justify-content: space-around; 
+     
+
+    
+}
+.project-container{
+    /*display: flex;*/
+    justify-content:space-around;
+    padding-block: 20px;
+}
+/* cuando achicamos la pantalla, que mantenga un formato prolijo*/
+  @media only screen and (max-width: 1000px){
+      .project-container{
+          display: flex;
+          flex-wrap: wrap ;
+      }
+  }
+
+h3{
+    width: 500px;
+    text-align: left;
+    font-size: 30px;
+    margin: 1pc;
+}
+.edit-button1{
+     
+    width: 50px;/*150px;*/
+    height: 25px;/*50px;*/
+    border-radius: 30px;/*para redondear los bordes del boton*/
+    background-color: blue;   
+    text-align:center; 
+    font-weight: 200;
+    font-size: 20px;   
+    
+    
+}
+.edit-button2{
+    width: 50px;/*150px;*/
+    height: 25px;/*50px;*/
+    border-radius: 30px;/*para redondear los bordes del boton*/
+    background-color: blue;
+    
+
+    text-align:center;
+    font-weight: 200;
+    font-size: 20px;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 600px;
+}
